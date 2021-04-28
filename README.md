@@ -25,25 +25,33 @@ General Purpose Input Outputs (GPIO).
 
 ## Instalation
 
+Quick Install:
+
 `git clone https://github.com/hro-ae/pigpio.git`
 `cd pigpio`
 `make`
 `sudo make install`
 
 If the Python part of the install fails it may be because you need the setup tools:
+
 `sudo apt install python-setuptools python3-setuptools`
 
 To check the library:
+
 `sudo ./x_pigpio # check C I/F`
 
 To compile link and run a C program:
+
 `gcc -Wall -pthread -o foobar foobar.c -lpigpio -lrt`
+
 `sudo ./foobar`
 
 To run the pigpio daemon:
+
 `sudo pigpiod`
 
 To stop the pigpio daemon:
+
 `sudo killall pigpiod`
 
 ## Interfaces
